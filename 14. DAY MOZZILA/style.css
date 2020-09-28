@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:300,400,600,700,900&display=swap');
+
+:root {
+    --fontPrimary:'Inter', sans-serif;
+    --fontColor: #20123a;
+    --plava: #0060df;
+    --tamnoPlava: #08204e;
+    --bela: #fff;
+    --transition: .3s ease;
+}
+
+/********************
+BASIC STYLES
+********************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fontPrimary);
+    font-size: 16px;
+    color: var(--fontColor);
+    margin-top: 30px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.py {
+    padding: 100px 0;
+}
+/**********
+nav
+**********/
+nav {
+    display: flex;
+}
+nav img {
+    width: 30px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.logo a {
+    text-decoration: none;
+    color: var(--fontColor);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 7px;
+}
+nav ul {
+    display: flex;
+    flex: 9;
+    align-items: center;
+    padding-left: 40px;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    margin-right:40px;
+    font-weight: 600;
+    color:var(--fontColor)
+}
+nav input[type="submit"] {
+    flex: 2;
+    background: transparent;
+    border: 2px solid var(--plava);
+    color: var(--plava);
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+nav input[type="submit"]:hover {
+    transition: var(--transition);
+    background: var(--plava);
+    color: var(--bela);
+}
+
+/***********
+header
+***********/
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/header-bottom.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    text-align: center;
+}
+header img:first-child {
+    width: 18%;
+    height: auto;
+    padding-top: 100px;
+}
+header h2 {
+    font-size: 3rem;
+    padding: 40px 0;
+}
+header p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 300;
+    padding-bottom: 40px;
+}
+header input[type="submit"] {
+    border: 2px solid var(--plava);
+    background: var(--plava);
+    font-size: 1.1rem;
+    color: var(--bela);
+    padding: 15px 30px;
+}
+header input[type="submit"]:hover {
+    cursor: pointer;
+    border: 2px solid var(--tamnop
+    Plava);
+    background: var(--tamnoPlava);
+    transition: var(--transition);
+}
+header .privacy {
+    text-decoration: none;
+    font-size: .8rem;
+    margin-top: 20px;
+    color: var(--fontColor);
+    font-weight: 300;
+}
+header .privacy:hover {
+    text-decoration: underline;
+}
+header .learnMore {
+    font-size: .8rem;
+    margin-top: 40px;
+    font-weight: 300;
+    padding-bottom: 120px;
+}
+/***********
+One
+***********/
+.one {
+    display: flex;
+    flex-wrap: wrap;
+}
+.one article:first-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.one article:last-child {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one article:last-child img {
+    width: 100%;
+}
+.one h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding: 10px 0;
+}
+.one p {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+/***********
+two
+***********/
+.two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.two img {
+    width: 100%;
+}
+.two .col {
+    flex: 0 0 46%;
+    padding-bottom: 100px;
+}
+.two h4 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.two p {
+    line-height:1.5;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+.two a {
+    color:var(--plava);
+    font-weight: 600;
+    font-size: .9rem;
+}
+/***********
+Three
+***********/
+.three .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.three .col {
+    flex: 0 0 30%;
+    padding-bottom: 80px;
+}
+.three h4 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.three h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    padding-bottom: 70px;
+    font-size: 2.3rem;
+}
+.three h3 {
+     font-size: 1.4rem;
+}
+.three .col h3 {
+    font-size: 1.4rem;
+    padding: 40px 0 20px 0;
+}
+.three .col p {
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+.three col a {
+   color: var(--plava);
+}
+.three .col a:hover {
+    text-decoration: none;
+}
+/***********
+Four
+***********/
+.four {
+    background-image: url(img/newsletter.png);
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+}
+.four article {
+    width: 95%;
+    margin: auto;
+    background: var(--bela);
+    border-radius: 5px;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.four article .col:first-child {
+    flex: 10;
+}
+.four article .col:first-child h3 {
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
+.four article .col:first-child p {
+    font-weight: 300;
+}
+.four article .col:first-child img {
+    width: 12%;
+}
+.four article .col:last-child {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.four article .col:last-child form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.four article .col:last-child form input {
+    flex: 0 0 100%;
+}
+.four article .col:last-child form input[type="email"] {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+.four article .col:last-child form input[type="submit"] {
+    border: 2px solid var(--plava);
+    background: var(--plava);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: var(--bela);
+}
+/********************
+footer
+********************/
+footer {
+    background: var(--fontColor);
+    color: var(--bela);
+    padding-top: 50px
+}
+footer h5 {
+    font-size: 1.2rem;
+}
+footer select {
+    display: block;
+    width: 200px;
+    margin: 20px 0 30px 0;
+}
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .container .col {
+    flex: 1 1 33%;
+    padding-bottom: 50px;
+}
+footer .col ul li  {
+    list-style: none;
+}
+footer .col ul li a {
+    line-height: 2.4;
+    color: var(--bela);
+    font-weight: 300;
+}
+footer .icons a {
+    font-size: 1.2rem;
+    color: var(--bela);
+    margin-right: 20px
+}
+.bottom-bar {
+    margin-top: 30px;
+}
+.bottom-bar h2  {
+    background: var(--bela);
+    display: inline-block;
+    padding: 0 10px;
+}
+.bottom-bar h2 a {
+    color: var(--fontColor);
+    text-decoration: none;
+}
+.bottom-bar .links a {
+    color: var(--bela);
+    font-size: .7rem;
+}
+.bottom-bar .col:last-child {
+    font-size: .7rem;
+}
+.bottom-bar .col:last-child p {
+    padding-bottom: 30px;
+}
+.bottom-bar .col:last-child a {
+    padding-bottom: 30px;
+    color: var(--bela);
+}
+/***********
+RESPONSIVE
+*********/
+@media (max-width:768px){
+    .container {
+        width: 90%;
+    }
+    .py {
+        padding: 50px 0;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        padding-left: 0px;
+    }
+    nav ul li {
+        margin: 5px;
+    }
+    header .headerimg:first-child {
+        width: 80%;
+        padding-top: 50px;
+    }
+    header h2 {
+        font-size: 2rem;
+    }
+    header p {
+        padding: 20px;
+    }
+    header .learnMore {
+        padding-bottom: 70px;
+    }
+    header img:last-child {
+        width: 150%;
+        position: relative;
+        left: -150%;
+    }
+    header {
+        background-size: 200%;
+    }
+    .one article:first-child {
+        flex: 0 0 100%;
+    }
+    .one article:first-child {
+        flex: 0 0 100%;
+    }
+    .one article:last-child img {
+       margin-top: 30px;
+    } 
+    .two .col {
+        flex: 0 0 100%;
+        padding-bottom: 50px;
+    }
+    .three h2 {
+        font-size: 1.4rem;
+    }
+    .three .col {
+        text-align: center;
+    }
+    .four article .col:first-child img {
+        display: none;
+    }
+    .four article .col:first-child p {
+        padding: 20px 0;
+    }
+}

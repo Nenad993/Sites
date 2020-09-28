@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,900&display=swap');
+:root {
+    --blue: #1e3d59;
+    --gray: #f5f0e1;
+    --orange: #ff6e40;
+    --white: #fff;
+    --padding: 50px 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+h1, h2, h3, h4, h5 ,h6 {
+    font-weight: 900;
+    color: var(--blue);
+}
+.container {
+    width: 70%;
+    margin: auto;
+}
+.container::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+/****Header ****/
+header {
+    background: var(--orange);
+    padding: 50px 0 0 0;
+}
+.top-header article:nth-child(1) {
+     float: left;
+}
+.top-header article:nth-child(2) {
+    float: right;
+}
+.top-header {
+    padding-bottom: 50px;
+}
+.top-header h1 a {
+    color: var(--white);
+    font-size: 2rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.top-header h1 a:hover {
+    color: var(--blue);
+    transition: .3s ease;
+}
+.top-header h5 {
+    color: var(--white);
+    font-size: 1rem;
+}
+.top-header article:nth-child(2) a {
+    color: var(--white);
+    font-size: 1.4rem;
+    margin-left: 20px;
+}
+.top-header article:nth-child(2) a:hover {
+    color: var(--blue);
+    transition: .3s ease;
+}
+nav {
+    background: var(--blue);
+    text-align: center;
+    padding: 15px 0;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin:10px 40px;
+} 
+nav ul li a:hover {
+    color: var(--orange);
+}
+
+

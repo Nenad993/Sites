@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins:400,700&display=swap');
+:root {
+    --gray1: #515365;
+    --gray2: #4e5062;
+    --gray3: #4b4d5e;
+    --gray4: #484a5a;
+    --purple: rgb(110, 37, 148);
+    --yellow: #ecd444;
+    --white: #fff;
+    --text: #444;
+    --transition: .4s ease;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
+}
+button {
+    border: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+button:hover {
+    cursor: pointer;
+    transition: var(--transition);
+}
+/************
+nav
+************/
+nav {
+   text-align: center;
+   height: 55px;
+   line-height: 55px;
+   background: linear-gradient(to right,var(--purple), var(--yellow));
+}
+nav ul li {
+    display: inline-block;
+    }
+nav ul li a {
+    text-decoration: none;
+    margin: 30px;
+    color: var(--white);
+}
+nav ul li a:hover {
+    color: var(--purple);
+    transition:var(--transition);
+}
+nav i {
+    font-size: 2rem;
+    position: relative;
+    top: 4px;
+}
+nav i:hover {
+    color: var(--yellow);
+    transition: var(--transition);
+}
+/************
+header
+************/
+header {
+    background-image: linear-gradient(rgba(110, 37, 148,.9), rgba(110, 37, 148,.9)),url(img/header3.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 220px 0;
+    color: var(--white);
+}
+h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+header h1::after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 80px;
+    background:var(--yellow);
+    margin: 20px auto 40px;
+}
+header h4{
+    font-size: 1.4rem;
+}
+header button {
+    background: var(--white);
+    color: var(--purple);
+    }
+    header button:hover {
+        background: var(--yellow);
+        cursor: pointer;
+        transition: var(--transition);
+        }
+/************
+about
+************/
+.about {
+    color: var(--white);
+    }
+    .about article {
+        width: 50%;
+        float: left;
+        padding: 60px;
+    }
+    .about .row {
+        display: block;
+        content: "";
+        clear: both;
+    }
+.about i {
+    color: var(--yellow);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.about h2, 
+.about p {
+    margin-bottom: 20px;
+}
+.about button {
+    background: transparent;
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+}
+.about button:hover {
+    background: var(--yellow);
+    color: var(--purple);
+}
+/************
+products
+************/
+.products .clearfix {
+    clear: both;
+    border-bottom: 1px solid lightgray;
+}
+.products h3 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+.products h3:after
+{
+    display: block;
+    content: "";
+    height: 4px;
+    width: 80px;
+    background:var(--text);
+    margin: 20px 0;
+}
+.products .row1 article:nth-child(1){
+    width: 40%;
+    float: left;
+    height: 50vh;
+    background-image: url(img/mac.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.products .row1 article:nth-child(2) {
+    width: 60%;
+    float: right;
+    padding: 7%;
+    height: 50vh;
+}
+
+.products .row2 article:nth-child(1) {
+    width: 60%;
+    float: left;
+    padding: 7%;
+    height: 50vh;
+}
+
+.products .row2 article:nth-child(2) {
+    width: 40%;
+    float: right;
+    background-image: url(img/ipad.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+
+.products .row3 article:nth-child(1){
+    width: 40%;
+    float: left;
+    height: 50vh;
+    background-image: url(img/iphone.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.products .row3 article:nth-child(2) {
+    width: 60%;
+    float: right;
+    padding: 7%;
+    height: 50vh;
+}
+/************
+cta
+************/
+.cta {
+    padding: 80px;
+    background: var(--yellow);
+    text-align: center;
+}
+.cta h2 {
+    font-size: 3rem;
+    }
+.cta h2::after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 80px;
+    background:var(--text);
+    margin: 20px auto 40px auto;
+    }
+.cta button {
+    background: var(--purple);
+    color: var(--white);
+    }
+.cta button:hover {
+    background: var(--text);
+    
+    }    
+/************
+footer
+************/
+footer {
+    background: var(--text);
+    padding: 60px;
+    color: var(--white);
+}
+footer h3 {
+    font-size: 1.4rem;
+}
+footer h3:after
+{
+    display: block;
+    content: "";
+    height: 4px;
+    width: 80px;
+    background:var(--yellow);
+    margin: 20px 0;
+}
+
+footer article:nth-child(1) {
+   width: 60%;
+   float: left;
+}
+footer article:nth-child(2){
+    width: 40%;
+   float: right;
+}
+footer .clearfix {
+    clear: both;
+}
+footer ul li {
+    list-style: none;
+    line-height: 2;
+}
+footer ul li a{
+    text-decoration: none;
+    color: var(--white);
+}
+footer button {
+    background: transparent;
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
+}
+footer button:hover {
+    background: var(--yellow);
+    color: var(--purple);
+}
+/*************************
+**************************
+R E S P O N S I V E
+**************************
+*************************/
+@media(min-width: 1400px) {
+    .products .row1 article:nth-child(2) {
+        padding: 10%;
+    }
+    .products .row2 article:nth-child(1) {
+        padding: 10%;
+    }
+    .products .row3 article:nth-child(2) {
+        padding: 10%;
+    }
+    .products p {
+        font-size: 1.1rem;
+    }
+}
+@media(min-width: 1200px) {
+    .products .row1 article:nth-child(2) {
+        padding: 7%;
+    }
+    .products .row2 article:nth-child(1) {
+        padding: 7%;
+    }
+    .products .row3 article:nth-child(2) {
+        padding: 7%;
+    }
+}
+@media(max-width: 768px) {
+    nav ul li a {
+        margin: 5px;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    header {
+        padding: 100px 0;
+    }
+    .about article {
+        width: 100%;
+    }
+    .products article {
+        width: 100%;
+    }
+    .products .row1 article:nth-child(2),
+    .products .row3 article:nth-child(2){
+        width: 100%;
+        padding: 15%
+    }
+    .products .row1 article:nth-child(1),
+    .products .row3 article:nth-child(1){
+        display: none;
+    }
+    .products .row2 article:nth-child(1) {
+        width: 100%;
+        padding: 15%
+    }
+    .products .row2 article:nth-child(2) {
+        display: none;
+    }
+    .cta h2 {
+        font-size: 2rem;
+    }
+    footer article:nth-child(1) {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    footer article:nth-child(2) {
+        width: 100%;
+    }
+    footer button {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

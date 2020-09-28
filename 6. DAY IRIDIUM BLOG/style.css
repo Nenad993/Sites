@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+:root {
+    --text: #4c4c4c;
+    --darkgray: #1d1d1d;
+    --lightgray: #f2f2f2;
+    --footerBg: rgba(255,255,255,.2);
+    --white: #fff;
+    --orange: #e95d3c;
+    --padding: 50px 0;
+}
+body {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+.container::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+/******************
+header
+******************/
+header {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+header h1 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 5rem;
+    padding-top: 150px;
+    text-shadow: 0 0 7px var(--orange);
+    letter-spacing: 2px;
+}
+header h5 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--orange);
+    letter-spacing: 2px;
+    padding-bottom: 50px;
+}
+nav {
+    padding-bottom: 150px;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: var(--white);
+    padding: 0 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color:var(--orange);
+    transition: .3s ease;
+}
+/******************
+first
+******************/
+.first {
+    padding: var(--padding);
+}
+.first article {
+    width: 60%;
+    float: left;
+    padding: 20px;
+}
+.first aside {
+    width: 40%;
+    float: left;
+    padding: 20px;
+}
+.first article img {
+    width: 100%;
+}
+.first article h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.first article h4 {
+    font-size: 1.2rem;
+    padding: 10px 0 40px;
+}
+.first article p {
+    font-size: 1.2rem;
+    padding: 10px 0 ;
+} 
+.first .post {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--lightgray);
+}
+.first .post img {
+    float: left;
+    padding-right: 10p;
+}
+.first .post p:nth-child(1) {
+    color: #848484;
+}
+.first aside .post p {
+    line-height: 3;
+}
+.first aside h3 {
+    font-size: 1.6rem;
+    padding-bottom: 40px;
+}
+/******************
+second
+******************/
+.second {
+    padding:var(--padding);
+    background: var(--lightgray);
+}
+.second  h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.second h4 {
+    font-size: 1.2rem;
+    padding: 10px 0 40px 0;
+    text-align: center;
+}
+.second article {
+    width: 33%;
+    float: left;
+    padding: 20px;
+}
+.second img {
+    width: 100%;
+}
+.second h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+.second p {
+    line-height: 1.5;
+    margin-top: 20px;
+}
+.second button {
+    background: var(--orange);
+    border: none;
+    color: var(--white);
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+/******************
+footer
+******************/
+footer {
+    background: var(--darkgray);
+    padding: var(--padding);
+}
+footer article {
+    width:33%;
+    float: left;
+    padding: 20px;
+}
+footer h4 {
+    font-size: 1.7rem;
+    color: var(--white);
+    padding-bottom: 30px;
+}
+footer article ul li {
+    color: var(--lightgray);
+    list-style: none;
+    line-height: 2;
+}
+footer a {
+   color: #8d8d8d;
+}
+footer a:hover {
+    color: var(--orange);
+    transition: .4s ease;
+}
+/**********
+Bottom bar
+**********/
+.bottom-bar {
+    background: #141414;
+    padding: var(--padding);
+    text-align: center;
+    color: var(--lightgray);
+}
+/**********
+Responsive
+**********/
+@media(max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+        padding-top: 100px;
+    }
+    nav {
+        padding-bottom: 100px;
+    }
+    nav ul li a {
+        color: var(--white);
+        padding: 2px;
+    }
+    .first article {
+        width: 100%;
+    }
+    .first aside {
+        width: 100%;
+    }
+    .first article h2 {
+        font-size:1.6rem;
+    }
+    .first aside .post p {
+        line-height: 1.6;
+    }
+    .first .post p:nth-child(1){
+        padding-bottom: 30px;
+    }
+    .second article {
+        width: 100%;
+    }
+    footer article {
+        width:100%;
+    }
+}

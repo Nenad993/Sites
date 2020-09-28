@@ -1,0 +1,307 @@
+:root {
+    --plava: #3496d8;
+    --tamnoSiva: #8f8f8f;
+    --bela: #fff;
+    --padding: 50px 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900|Slabo+27px');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Slabo 27px', serif;
+    color: var(--tamnoSiva);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/********** HEADER ***********/
+header {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 0 50px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--bela);
+    text-transform: uppercase;
+    margin-left: 60px;
+}
+.logo {
+    color: var(--bela);
+    font-size: 2rem;
+    text-decoration: none;
+}
+header hgroup {
+    color: var(--bela);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+}
+header hgroup h2 {
+    font-size: 5rem;
+    text-shadow: 3px 3px 16px black;
+}
+header h4 {
+    font-size: 2rem;
+}
+header h5 {
+    font-size: 1.1rem;
+    padding-top: 20px;
+}
+/********** INTRODUCTION ***********/
+.introduction img {
+    width: 100%;
+}
+.introduction {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--padding);
+}
+.introduction .col {
+    flex: 1;
+}
+.introduction .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+.introduction h2 {
+    font-size: 3rem;
+    color: var(--plava);
+}
+.introduction p {
+    font-size: 1.1rem;
+    padding: 20px 0;
+}
+.introduction button {
+    width: 200px;
+    background: var(--plava);
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    color: var(--bela);
+    border-radius: 30px;
+    margin-top: 20px;
+}
+/********** SERVICES ***********/
+.services {
+    padding: var(--padding);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.services .col {
+    flex: 0 0 30%;
+}
+.services h2 {
+    color: var(--plava);
+    padding-bottom: 20px;
+}
+.services h3 {
+    color: var(--plava);
+    font-size: 4rem;
+    padding-bottom: 20px
+}
+.services p {
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.3;
+}
+/********** WORKS ***********/
+.works {
+    padding: var(--padding);
+}
+.works h2 {
+    color: var(--plava);
+    text-align: center;
+    font-size: 3rem;
+    padding: var(--padding);
+}
+.works h2 + p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.works .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.works .col {
+    flex: 0 0 32%;
+    border-bottom: 10px solid var(--plava);
+    margin-bottom: 30px;
+    position: relative;
+}
+.works h4 {
+    background: rgba(52, 150, 216,.6);
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.2rem;
+    padding: 20px;
+    color: var(--bela);
+}
+.img1 {
+    background-image: url(img/works1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.img2 {
+    background-image: url(img/works2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.img3 {
+    background-image: url(img/works3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.img4 {
+    background-image: url(img/works4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.img5 {
+    background-image: url(img/works5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.img6 {
+    background-image: url(img/works2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+/********** FOOTER ***********/
+footer {
+    background-image: url(img/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    padding: var(--padding);
+    color: var(--bela);
+}
+footer h2 {
+    font-size: 4rem;
+    border-bottom: 10px solid var(--bela);
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+footer hr {
+    background: var(--bela);
+    border: none;
+    height: 1px;
+    margin-bottom: 30px;
+}
+footer p {
+    font-size: 1.2rem;
+}
+footer .row {
+    display: flex;
+    flex-wrap: wrap
+}
+footer .row .col {
+    flex: 0 0 50%;
+    font-size: 1.7rem;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+input[type="email"] {
+    padding: 10px;
+}
+footer button {
+    padding: 13px 30px;
+    background: var(--plava);
+    border: none;
+    color: var(--bela);
+/*
+    position: relative;
+    left: -8px
+*/
+}
+@media(max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li a {
+        margin-left: 0px;
+    }
+    header hgroup h2 {
+        font-size: 3rem;
+    }
+    header h4 {
+        font-size: 1.5rem;
+        padding-top: 10px
+    }
+    header {
+        height: 80vh;
+    }
+    header hgroup {
+        height: 60vh;
+    }
+    .introduction .col,
+    .works .col,
+    .services .col {
+        flex: 0 0 100%;
+    }
+    .introduction .text {
+        padding: 20px;
+        order: -1;
+    }
+    .services .col {
+        margin-bottom: 40px;
+    }
+    footer {
+        height: 600px;
+    }
+    footer .row .col {
+        padding: 10px;
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+    }
+    footer h2 {
+        font-size: 3rem;
+    }
+    .img1,.img2, .img3, .img4, .img5, .img6 {
+        height: 400px;
+    }
+}
